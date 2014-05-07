@@ -22,9 +22,11 @@ $mailer = \Swift_Mailer::newInstance($transport);
 $message = \Swift_Message::newInstance()
     ->setSubject('テストメール')
     ->setTo($toMailAddress)
+    // 宛先を表示 array('foo@foo.com' => 'Mr.FooBar')と同じ
     ->setFrom(['foo@foo.com' => 'Mr.FooBar'])
     ->setBody('これはテストメールです。')
 ;
+// メール送信
 $result = $mailer->send($message);
 
 echo $result;
