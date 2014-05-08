@@ -20,8 +20,9 @@ $mailer = \Swift_Mailer::newInstance($transport);
 
 // 添付ファイル
 // hogehoge.jpegにリネームした画像ファイルを添付する
-$attachment = \Swift_Attachment::fromPath(__DIR__ . '/img/twitter_icon_sample.jpg', 'image/jpeg')
-    ->setFilename('hogehoge.jpeg');
+$attachment = \Swift_Attachment::fromPath(__DIR__ . '/img/twitter_icon_sample.jpg')
+    ->setFilename('hogehoge.jpeg')
+    ->setContentType('image/jpeg');
 
 // メッセージ作成
 $message = \Swift_Message::newInstance()
@@ -31,8 +32,7 @@ $message = \Swift_Message::newInstance()
     ->setTo($toMailAddress)
     // 宛先を表示 array('foo@foo.com' => 'Mr.FooBar')と同じ
     ->setFrom(['foo@foo.com' => 'Mr.FooBar'])
-    ->setBody('これはテストメールです。')
-;
+    ->setBody('これはテストメールです。');
 
 // メール送信
 $result = $mailer->send($message);
