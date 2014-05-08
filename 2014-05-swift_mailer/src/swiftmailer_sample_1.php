@@ -24,8 +24,8 @@ $message = \Swift_Message::newInstance()
     ->setTo($toMailAddress)
     // 宛先を表示 array('foo@foo.com' => 'Mr.FooBar')と同じ
     ->setFrom(['foo@foo.com' => 'Mr.FooBar'])
-    ->setBody('これはテストメールです。')
-;
+    ->setBody('これはテストメールです。');
+
 // メール送信
 $result = $mailer->send($message);
 
