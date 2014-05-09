@@ -32,14 +32,14 @@
                 "ruflin/elastica": "0.90.*"
             },
             "suggest": {
-                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
-                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
-                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
-                "ext-mongo": "Allow sending log messages to a MongoDB server",
-                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "raven/raven": "Allow sending log messages to a Sentry server",
-                "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+                "aws/aws-sdk-php": "Allow sending logs messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending logs messages to a CouchDB server",
+                "ext-amqp": "Allow sending logs messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending logs messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending logs messages to a GrayLog2 server",
+                "raven/raven": "Allow sending logs messages to a Sentry server",
+                "rollbar/rollbar": "Allow sending logs messages to Rollbar",
+                "ruflin/elastica": "Allow sending logs messages to an Elastic Search server"
             },
             "type": "library",
             "extra": {
