@@ -7,7 +7,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 
-$logging_path = __DIR__ . '/../logs/foo_test.log';
+$logging_path = __DIR__ . '/../logs/foo_test_1.log';
 
 $logger = new Logger('foo_test');
 
